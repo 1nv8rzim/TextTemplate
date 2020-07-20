@@ -4,7 +4,8 @@ Author: Maxwell Fusco
 Language: Python 3.8
 """
 import tkinter
+import resources
 
 class TextTemplate:
-    def __init(self):
+    def __init__(self):
         pass
