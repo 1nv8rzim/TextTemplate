@@ -1,3 +1,4 @@
+0
 Hi <CUSTOMER NAME>,
 
 Please let me know if you need any further assistance. Unfortunately, I will be closing the case <TIME FRAM> due to Cisco's policies if I don't hear back from you. I hope I was able to help resolve your issue and would love to assist you further if necessary.
