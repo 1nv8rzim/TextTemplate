@@ -1,0 +1,9 @@
+Hello <CUSTOMER NAME>,
+
+My name is Max and I am a member of the Webex TAC team. I have accepted case: <CASE NUMBER> and will be helping you resolve this issue. My contact information is below should you need to get ahold of me.
+
+I see when you opened the case that you would like to delete your free Webex account.
+
+To move forward with this request can you please confirm that you would like to delete the following information:
+Username: <USERNAME>
+Site: <SITE>

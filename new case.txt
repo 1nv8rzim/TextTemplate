@@ -1,0 +1,10 @@
+Hi <CUSTOMER NAME>,
+
+My name is Max and I am a member of the Cisco Webex TAC Team. I have accepted case SR <CASE NUMBER> and will be helping you resolve your issue. Looking at your case, <CASE DESCRIPTION>
+
+To investigate further, I will need the following from you:
+	* 
+	* 
+	* 
+
+Please feel free to reach out with any updates. I also kindly ask you reply all to all following correspondence so that your emails will be populated to our case tracking. Upon the providing the above information, I will be able to look further into your case.
