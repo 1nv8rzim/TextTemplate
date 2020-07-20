@@ -9,30 +9,30 @@ import os
 class TextTemplate:
     def __init__(self):
         self.root = tkinter.Tk()
-        self.responses = TextTemplate.generate_reponses()
+        self.responses = TextTemplate.generate_responses()
 
     @staticmethod
-    def generate_reponses():
+    def generate_responses():
         responses = []
         for filename in os.listdir(os.getcwd()):
-            if filename == 'TextTemplate.py':
+            if filename in ('TextTemplate.py','.git','..','.'):
                 continue
-            reponses.append(TextTemplate.generate_reponses(filename))
-        return responses.sort()
+            responses.append(TextTemplate.generate_response(filename))
+        return responses
 
     @staticmethod
-    def generate_reponse(filename):
+    def generate_response(filename):
         file_tup = []
         with open(filename) as file:
             for i, line in enumerate(file):
                 if i == 0:
-                    file_tup.append(int(file.readline().strip()))
-                    file_tup.append(filename)
+                    file_tup.append(int(line.strip()))
+                    file_tup.append(filename[:-4])
                 else:
                     if len(file_tup) == 3:
                         file_tup[2] += line
                     else:
                         file_tup.append(line)
         return tuple(file_tup)
-        
-                        
+
+text_template = TextTemplate()

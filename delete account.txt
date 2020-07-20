@@ -1,5 +1,5 @@
 0
-Hello <CUSTOMER NAME>,
+Hi <CUSTOMER NAME>,
 
 My name is Max and I am a member of the Webex TAC team. I have accepted case: <CASE NUMBER> and will be helping you resolve this issue. My contact information is below should you need to get ahold of me.
 
