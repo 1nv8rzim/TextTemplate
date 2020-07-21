@@ -31,6 +31,8 @@ class TextTemplate:
                 button.grid(row=x, column=y, sticky=N+S+E+W)
                 #button.pack(expand=FALSE, fill=X, side=TOP)
 
+        self.root.mainloop()
+
     @staticmethod
     def generate_responses():
         responses = []
