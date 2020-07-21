@@ -5,7 +5,7 @@ Language: Python 3.8
 """
 from tkinter import *
 import os
-import subprocess
+from subprocess import run
 from math import sqrt, ceil
 
 class TextTemplate:
@@ -27,11 +27,17 @@ class TextTemplate:
                 if len(self.responses) <= x * self.row + y:
                     break
                 response = self.responses[x * self.row + y]
-                button = Button(self.frame, text=response[1], command=lambda:subprocess.run("pbcopy", universal_newlines=True, input=response[2]))
+                button = Button(self.frame, text=response[1], command=TextTemplate.clipboard(response[2]))
                 button.grid(row=x, column=y, sticky=N+S+E+W)
-                #button.pack(expand=FALSE, fill=X, side=TOP)
 
         self.root.mainloop()
+
+    @staticmethod
+    def clipboard(response):
+        def internal():
+            run("pbcopy", universal_newlines=True, input=response)
+        return internal
+        
 
     @staticmethod
     def generate_responses():
