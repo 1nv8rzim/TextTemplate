@@ -3,30 +3,33 @@ creates custom gui to copy custom text templates to clipboard
 Author: Maxwell Fusco
 Language: Python 3.8
 """
-import tkinter
+from tkinter import *
 import os
 import subprocess
 from math import sqrt, ceil
 
 class TextTemplate:
     def __init__(self):
-        self.root = tkinter.Tk()
+        self.root = Tk()
         self.responses = TextTemplate.generate_responses()
-        self.frame = tkinter.Frame(self.root)
-        self.frame.grid()
-
+        self.frame = Frame(self.root)
         self.row, self.column = self.generateDimensions()
-
-        self.grid = tkinter.Frame(self.frame)
-        self.grid.grid(sticky=N+S+E+W, columns=self.column, rows=self.row, columnspan=2)
+        Grid.rowconfigure(self.root, 0, weight=1)
+        Grid.columnconfigure(self.root, 0, weight=1)
+        self.frame.grid(row=0, column=0, sticky=N+S+E+W)
+        self.grid=Frame(self.frame)
+        self.grid.grid(sticky=N+S+E+W, column=self.column, row=self.row, columnspan=2)
+        Grid.rowconfigure(self.frame, self.row, weight=1)
+        Grid.columnconfigure(self.frame, self.column, weight=1)
 
         for x in range(self.row):
             for y in range(self.column):
                 if len(self.responses) <= x * self.row + y:
                     break
-                button = tkinter.Button(grid)
                 response = self.responses[x * self.row + y]
-                button.grid(row=x, column=y, text=response[1], command=lambda:subprocess.run("pbcopy", universal_newlines=True, input=response[2]))
+                button = Button(self.frame, text=response[1], command=lambda:subprocess.run("pbcopy", universal_newlines=True, input=response[2]))
+                button.grid(row=x, column=y, sticky=N+S+E+W)
+                #button.pack(expand=FALSE, fill=X, side=TOP)
 
     @staticmethod
     def generate_responses():
@@ -53,8 +56,8 @@ class TextTemplate:
         return tuple(file_tup)
 
     def generateDimensions(self):
-        row = ciel(sqrt(len(self.responses)))
-        col = ceil(len(self.reponses)/row)
+        row = ceil(sqrt(len(self.responses)))
+        col = ceil(len(self.responses)/row)
         return row, col
 
 text_template = TextTemplate()
