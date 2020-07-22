@@ -49,7 +49,7 @@ class TextTemplate:
     def generate_responses():
         responses = []
         for filename in os.listdir(os.getcwd()):
-            if filename in ('TextTemplate.py','.git','..','.'):
+            if filename in ('TextTemplate.py','.git','..','.','TextTemplate.sh'):
                 continue
             responses.append(TextTemplate.generate_response(filename))
         return sorted(responses, reverse=True)
