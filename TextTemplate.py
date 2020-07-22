@@ -28,7 +28,7 @@ class TextTemplate:
                 if len(self.responses) <= x * self.row + y:
                     break
                 response = self.responses[x * self.row + y]
-                button = Button(self.frame, text=response[1], command=TextTemplate.clipboard(response[2]), width=13, height=6, compound='c')
+                button = Button(self.frame, text=response[1], command=TextTemplate.clipboard(response), width=13, height=6, compound='c')
                 button.grid(row=x, column=y, sticky=N+S+E+W)
 
         self.root.mainloop()
@@ -36,7 +36,12 @@ class TextTemplate:
     @staticmethod
     def clipboard(response):
         def internal():
-            run("pbcopy", universal_newlines=True, input=response)
+            run("pbcopy", universal_newlines=True, input=response[2])
+            with open(response[1] + '.txt', 'r') as file:
+                lines = file.readlines()
+            lines[0] = str(int(lines[0].strip()) + 1) + '\n'
+            with open(response[1] + '.txt', 'w') as file:
+                file.writelines(lines)
         return internal
         
 
@@ -47,7 +52,7 @@ class TextTemplate:
             if filename in ('TextTemplate.py','.git','..','.'):
                 continue
             responses.append(TextTemplate.generate_response(filename))
-        return responses
+        return sorted(responses, reverse=True)
 
     @staticmethod
     def generate_response(filename):
