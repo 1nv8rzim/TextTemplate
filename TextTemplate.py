@@ -11,6 +11,7 @@ from math import sqrt, ceil
 class TextTemplate:
     def __init__(self):
         self.root = Tk()
+        self.root.title("Response Templates")
         self.responses = TextTemplate.generate_responses()
         self.frame = Frame(self.root)
         self.row, self.column = self.generateDimensions()
@@ -27,7 +28,7 @@ class TextTemplate:
                 if len(self.responses) <= x * self.row + y:
                     break
                 response = self.responses[x * self.row + y]
-                button = Button(self.frame, text=response[1], command=TextTemplate.clipboard(response[2]))
+                button = Button(self.frame, text=response[1], command=TextTemplate.clipboard(response[2]), width=13, height=6, compound='c')
                 button.grid(row=x, column=y, sticky=N+S+E+W)
 
         self.root.mainloop()
