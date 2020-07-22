@@ -1,0 +1,8 @@
+0
+Hi <CUSTOMER NAME>,
+ 
+Your account associated with the following credentials has been deleted:
+Username: <USERNAME>
+Site: <SITE>>
+ 
+Do you need any further assistance? If not, do I have your approval to close this case?

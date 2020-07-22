@@ -1,0 +1,5 @@
+0
+Hi <CUSTOMER NAME>,
+ 
+Just reaching out a final time to see if you need any assistance or questions answered.
+Due to Cisco policy on case inactivity I will be closing this case <TIME> if I do not hear back from you.

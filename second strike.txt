@@ -1,0 +1,4 @@
+Hi <CUSTOMER NAME>,
+ 
+I am reaching out again to see if you need any further assistance. If not, would you be ok with closing this case?
+I will be reaching out again <DATE> and if I still don’t hear back from you by <DATE>; I will be forced to close your case due to Cisco’s policies on case inactivity.

@@ -3,6 +3,6 @@ I would like to thank you for contacting Cisco TAC Center. As we have agreed, I 
 
 It has been a pleasure working in this service request (SR) number: <CASE NUMBER>
 
-Please remember, if you need any further assistance, do not hesitate to contact Cisco TAC Center, below is my contact information and working schedule if you need it in the future. Also you can visit https://help.webex.com/ for frequently asked questions.
+Please remember, if you need any further assistance, do not hesitate to contact Cisco TAC Center, below is my contact information and working schedule if you need it in the future. Also, you can visit https://help.webex.com/ for frequently asked questions.
 
 Thank you for choosing Cisco; it is always a pleasure to help you.
