@@ -39,7 +39,10 @@ class TextTemplate:
             run("pbcopy", universal_newlines=True, input=response[2])
             with open(response[1] + '.txt', 'r') as file:
                 lines = file.readlines()
-            lines[0] = str(int(lines[0].strip()) + 1) + '\n'
+            try:
+                lines[0] = str(int(lines[0].strip()) + 1) + '\n'
+            except:
+                lines = lines.insert(0,"1\n")
             with open(response[1] + '.txt', 'w') as file:
                 file.writelines(lines)
         return internal
@@ -60,7 +63,10 @@ class TextTemplate:
         with open(filename) as file:
             for i, line in enumerate(file):
                 if i == 0:
-                    file_tup.append(int(line.strip()))
+                    try:
+                        file_tup.append(int(line.strip()))
+                    except:
+                        file_tup.append(0)       
                     file_tup.append(filename[:-4])
                 else:
                     if len(file_tup) == 3:
