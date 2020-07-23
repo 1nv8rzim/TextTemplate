@@ -42,7 +42,7 @@ class TextTemplate:
             try:
                 lines[0] = str(int(lines[0].strip()) + 1) + '\n'
             except:
-                lines = lines.insert(0,"1\n")
+                lines = ["1\n"] + lines
             with open(response[1] + '.txt', 'w') as file:
                 file.writelines(lines)
         return internal
