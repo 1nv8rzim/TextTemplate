@@ -9,6 +9,8 @@ from subprocess import run
 from math import sqrt, ceil
 
 class TextTemplate:
+    """
+    """
     def __init__(self):
         self.root = Tk()
         self.root.title("Response Templates")
