@@ -37,6 +37,8 @@ class TextTemplate:
 
     @staticmethod
     def clipboard(response):
+        """
+        """
         def internal():
             run("pbcopy", universal_newlines=True, input=response[2])
             with open(response[1] + '.txt', 'r') as file:
@@ -49,6 +51,8 @@ class TextTemplate:
 
     @staticmethod
     def generate_responses():
+        """
+        """
         responses = []
         for filename in os.listdir(os.getcwd()):
             if filename in ('TextTemplate.py','.git','..','.'):
