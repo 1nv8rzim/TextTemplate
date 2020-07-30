@@ -62,6 +62,8 @@ class TextTemplate:
 
     @staticmethod
     def generate_response(filename):
+        """
+        """
         file_tup = []
         with open(filename) as file:
             for i, line in enumerate(file):
