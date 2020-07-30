@@ -9,6 +9,8 @@ from subprocess import run
 from math import sqrt, ceil
 
 class TextTemplate:
+    """
+    """
     def __init__(self):
         self.root = Tk()
         self.root.title("Response Templates")
@@ -35,6 +37,8 @@ class TextTemplate:
 
     @staticmethod
     def clipboard(response):
+        """
+        """
         def internal():
             run("pbcopy", universal_newlines=True, input=response[2])
             with open(response[1] + '.txt', 'r') as file:
@@ -50,6 +54,8 @@ class TextTemplate:
 
     @staticmethod
     def generate_responses():
+        """
+        """
         responses = []
         for filename in os.listdir(os.getcwd()):
             if filename in ('TextTemplate.py','.git','..','.','TextTemplate.sh'):
@@ -59,6 +65,8 @@ class TextTemplate:
 
     @staticmethod
     def generate_response(filename):
+        """
+        """
         file_tup = []
         with open(filename) as file:
             for i, line in enumerate(file):
