@@ -1,4 +1,4 @@
-2
+6
 Hi <CUSTOMER NAME>,
 
 My name is Max and I am a member of the Cisco Webex TAC Team. I have accepted case SR <CASE NUMBER> and will be helping you resolve your issue. Looking at your case, <CASE DESCRIPTION>
