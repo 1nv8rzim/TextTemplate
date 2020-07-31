@@ -1,4 +1,4 @@
-1
+3
 Hi <CUSTOMER NAME>,
  
 Your account associated with the following credentials has been deleted:
