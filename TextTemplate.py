@@ -84,6 +84,8 @@ class TextTemplate:
         return tuple(file_tup)
 
     def generateDimensions(self):
+        """
+        """
         row = ceil(sqrt(len(self.responses)))
         col = ceil(len(self.responses)/row)
         return row, col
