@@ -10,6 +10,7 @@ from math import sqrt, ceil
 
 class TextTemplate:
     """
+    defines TextTemplate object
     """
     def __init__(self):
         self.root = Tk()
