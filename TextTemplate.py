@@ -13,6 +13,8 @@ class TextTemplate:
     defines TextTemplate object
     """
     def __init__(self):
+        """
+        """
         self.root = Tk()
         self.root.title("Response Templates")
         self.responses = TextTemplate.generate_responses()
