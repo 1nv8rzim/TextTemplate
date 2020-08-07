@@ -42,6 +42,7 @@ class TextTemplate:
     @staticmethod
     def clipboard(response):
         """
+        adds given text to clipboard
         """
         def internal():
             run("pbcopy", universal_newlines=True, input=response[2])
