@@ -14,6 +14,7 @@ class TextTemplate:
     """
     def __init__(self):
         """
+        initialized TextTemplate object 
         """
         self.root = Tk()
         self.root.title("Response Templates")
