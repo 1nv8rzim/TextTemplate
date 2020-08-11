@@ -72,7 +72,7 @@ class TextTemplate:
     @staticmethod
     def generate_response(filename):
         """
-        generates string reponse from file
+        generates string reponse from given filename
         """
         file_tup = []
         with open(filename) as file:
