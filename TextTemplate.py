@@ -60,7 +60,7 @@ class TextTemplate:
     @staticmethod
     def generate_responses():
         """
-        generates responses for cwd 
+        generates all responses in cwd
         """
         responses = []
         for filename in os.listdir(os.getcwd()):
