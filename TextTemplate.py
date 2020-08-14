@@ -13,6 +13,9 @@ class TextTemplate:
     defines TextTemplate object
     """
     def __init__(self):
+        """
+        initialized TextTemplate object 
+        """
         self.root = Tk()
         self.root.title("Response Templates")
         self.responses = TextTemplate.generate_responses()
@@ -39,6 +42,7 @@ class TextTemplate:
     @staticmethod
     def clipboard(response):
         """
+        adds given text to clipboard
         """
         def internal():
             run("pbcopy", universal_newlines=True, input=response[2])
@@ -56,6 +60,7 @@ class TextTemplate:
     @staticmethod
     def generate_responses():
         """
+        generates all responses in cwd
         """
         responses = []
         for filename in os.listdir(os.getcwd()):
@@ -67,6 +72,7 @@ class TextTemplate:
     @staticmethod
     def generate_response(filename):
         """
+        generates string reponse from given filename
         """
         file_tup = []
         with open(filename) as file:
