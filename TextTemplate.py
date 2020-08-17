@@ -92,6 +92,7 @@ class TextTemplate:
 
     def generateDimensions(self):
         """
+        generate proper dimensions to fit all responses
         """
         row = ceil(sqrt(len(self.responses)))
         col = ceil(len(self.responses)/row)
