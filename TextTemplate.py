@@ -42,7 +42,7 @@ class TextTemplate:
     @staticmethod
     def clipboard(response):
         """
-        adds given text to clipboard
+        adds given text to clipboard of computer
         """
         def internal():
             run("pbcopy", universal_newlines=True, input=response[2])
@@ -92,6 +92,7 @@ class TextTemplate:
 
     def generateDimensions(self):
         """
+        generate proper dimensions to fit all responses
         """
         row = ceil(sqrt(len(self.responses)))
         col = ceil(len(self.responses)/row)
