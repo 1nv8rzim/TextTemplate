@@ -36,7 +36,7 @@ class TextTemplate:
                 try:
                     response = self.responses[x * self.column + y]
                     button = Button(self.frame, text=response[1], command=TextTemplate.clipboard(response), width=13, height=6, compound='c')
-                    button.grid(row=x, column=y, sticky=N+S+E+W)
+                    button.grid(row=y, column=x, sticky=N+S+E+W)
                 except:
                     pass
 
