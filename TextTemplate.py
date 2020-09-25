@@ -25,16 +25,16 @@ class TextTemplate:
         Grid.columnconfigure(self.root, 0, weight=1)
         self.frame.grid(row=0, column=0, sticky=N+S+E+W)
         self.grid=Frame(self.frame)
-        self.grid.grid(sticky=N+S+E+W, column=self.column, row=self.row,)
+        self.grid.grid(sticky=N+S+E+W, column=self.column, row=self.row)
         Grid.rowconfigure(self.frame, self.row, weight=1)
         Grid.columnconfigure(self.frame, self.column, weight=1)
 
-        for x in range(self.row):
-            for y in range(self.column):
-                if len(self.responses) <= x * self.row + y:
+        for x in range(self.column):
+            for y in range(self.row):
+                if len(self.responses) <= x * self.column + y:
                     break
                 try:
-                    response = self.responses[x * self.row + y]
+                    response = self.responses[x * self.column + y]
                     button = Button(self.frame, text=response[1], command=TextTemplate.clipboard(response), width=13, height=6, compound='c')
                     button.grid(row=x, column=y, sticky=N+S+E+W)
                 except:
