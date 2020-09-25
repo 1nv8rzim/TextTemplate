@@ -1,5 +1,5 @@
 0
-Hi Team,
+Hi <CUSTOMER NAME>,
  
 My name is Max on the Cisco TAC Server Virtualization team. I have taken ownership of your Service Request. I'm sending this out as an initial point of contact to let you know that I have accepted your case and to give you information on how to contact me.
  
