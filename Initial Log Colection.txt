@@ -1,0 +1,10 @@
+0
+Hi Team,
+ 
+My name is Max and I will be the engineer working on your Service Request <SR NUMBER>. I am sending this e-mail out as an initial point of contact to let you know that I have accepted your case, and to give you information on how to contact me.
+
+To proceed with this case I will need <TYPES OF LOGS> logs. If you need assistance with this process, please reference the links below:
+For extracting logs - http://www.cisco.com/c/en/us/support/docs/servers-unified-computing/ucs-manager/115023-visg-tsfiles-00.html
+For uploading logs to the case - https://cway.cisco.com/csc
+ 
+Please feel free to reach out with any questions or concerns. I also kindly ask you reply all to all following correspondence so that your emails will be populated to our case tracking.

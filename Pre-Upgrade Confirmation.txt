@@ -1,0 +1,36 @@
+Hi Team,
+ 
+I have gone through the pre upgrade check and everything seems to be looking good.
+ 
+Your HA state is healthy, and your system is ready for the upgrade.
+The following is your HA Cluster State:
+ 
+<HA STATE>
+ 
+All of your processes for the FI are running with no core files or retries. <CHECK CORE FILES AND RETRIES>
+ 
+______________________________________________________________
+ 
+Some recommendations before upgrading:
+
+Log into your subordinate Fabric Interconnect and run these commands.
+
+UCS-A /fabric-interconnect # connect nxos a
+
+UCS-A(nxos)# show npv flogi-table
+
+This should return a table that verifies the data path is up on the FI.
+
+Now you are ready to begin the upgrade. After upgrading the subordinate first, run this command again to verify that you still have connection to the data path. If you do, you’re all set to upgrade the Primary FI.
+
+Here’s a list of some other pre-upgrade checks to perform.
+
+a. Review firmware release notes
+b. Review compatibility
+c. Upload required images
+d. Verify FI HA and UCSM PMON status
+e. Generate all configuration and full state backups (right before upgrade)
+f. Verify data path is ready (right before upgrade)
+g. Disable call home (right before upgrade)
+
+You’re all set! Please let me know if I can help with anything else.
