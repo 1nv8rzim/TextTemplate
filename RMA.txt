@@ -1,0 +1,33 @@
+0
+Hi Team,
+ 
+My name is Max on the Cisco TAC Server Virtualization team. I have taken ownership of your Service Request. I'm sending this out as an initial point of contact to let you know that I have accepted your case and to give you information on how to contact me.
+ 
+Please can someone complete RMA template below so the <PART> can be RMA’ed?
+ 
+RMA Template:
+Company Name:
+Address:
+City:
+State:
+Postcode/ZIP:
+Country:
+ 
+Site Contact
+==================
+Contact Person:
+Telephone:
+Email:
+ 
+RMA
+==================
+1. Do you prefer for parts to be delivered at a particular time or date?
+2. Is the site Manned or Unmanned?
+3. Is the site accessible after 5pm?
+4. Is it ok to leave the part/s with security?
+5. Any special delivery instructions?
+6. If your contract permits a field engineer for the replacement, do you require one for this?
+7. Please, provide a specific date and time for the field engineer arrival?
+ 
+ 
+Please reply-to-all during our email correspondence so that our conversation is documented within the case notes properly.  If you need immediate assistance and I'm not available, please call the Cisco TAC number listed in my signature and request the next available engineer to be assigned to your case.
