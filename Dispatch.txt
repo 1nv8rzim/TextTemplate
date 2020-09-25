@@ -1,0 +1,6 @@
+0
+Hi <CUSTOMER NAME>,
+ 
+I am dispatching you case to an engineer that will be available at <TIME/DATE>.
+ 
+I wish you the best of luck on your case!
