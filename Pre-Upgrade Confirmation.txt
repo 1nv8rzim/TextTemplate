@@ -1,4 +1,4 @@
-Hi Team,
+Hi <CUSTOMER NAME>,
  
 I have gone through the pre upgrade check and everything seems to be looking good.
  
