@@ -1,4 +1,4 @@
-0
+3
 Hi <CUSTOMER NAME>,
  
 My name is Max and I will be the engineer working on your Service Request <SR NUMBER>. I am sending this e-mail out as an initial point of contact to let you know that I have accepted your case, and to give you information on how to contact me.
